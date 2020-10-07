@@ -1,0 +1,119 @@
+body {
+    background-color: #000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.col {
+    margin: 0 auto;
+    position: absolute;
+    width: 1130px;    
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.nav {
+    padding: 0 14%;
+    margin: 0 auto;
+}
+
+.nav-item {
+    text-align: center;
+    display: inline-block;
+}
+
+.nav-link {
+    background-color: aliceblue;
+    color: #000; 
+    display: block;   
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    padding: 3rem 1rem;
+    margin: 1rem;
+    text-align: center;
+    pointer-events: all;
+    /* border: 2px dashed blueviolet;    */
+}
+
+.nav-link:after {
+    position: relative;
+    top: -93px;
+    left: -16px;     
+    content: "";
+    border: 2px dashed #fff;        
+    display: block;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;    
+    transition: all .3s cubic-bezier(.53,-.67,.73,.74);
+    transform: none;
+    opacity: 0;    
+}
+.nav-link:hover:after {    
+    transition: all .3s cubic-bezier(.37,.74,.15,1.65);
+    transform: scale(1.1);
+    opacity: 1;   
+}
+
+ul > li > a > i {
+    position: relative;
+    top: 6px;
+    display: block !important;
+    text-align: center;
+    pointer-events: none;
+    font-size: 20px;     
+}
+
+span { 
+    display: inline-block;   
+    font-size: 10px;
+    pointer-events: none;
+    color: #000;
+}
+
+.icon-g1 {    
+    color: #000;
+    animation-play-state: running;
+    animation-name: zoom;
+    animation-timing-function: ease-in-out;
+    animation-duration: 350ms;
+    animation-iteration-count: 1;
+    /* animation-direction: alternate; */
+    animation-fill-mode: forwards;    
+} 
+
+.icon-g2 {    
+    color: #000;
+    animation-play-state: running;
+    animation-name: zoom2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 350ms;
+    animation-iteration-count: 1;    
+    animation-fill-mode: forwards;    
+} 
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);            
+    }
+    100% {
+        transform: scale(1.7);        
+    }    
+}
+
+@keyframes zoom2 {
+    0% {
+        transform: scale(1.7);            
+    }
+    100% {
+        transform: scale(1);        
+    }    
+}
+
+.link-text1, .link-text2, .link-text3, .link-text4, .link-text5 {
+    position: relative;
+    top: 0px;
+    opacity: 0;
+}
