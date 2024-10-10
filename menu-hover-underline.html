@@ -5,90 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Underline Hover</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
-    <style>  
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color:#000;
-        }       
-
-        nav {
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;            
-            margin: 0 auto;
-            position: absolute;
-            width: 700px;
-            height: 50px;
-            background-color: #000;            
-            font-size: 0;
-            top: 50%;
-            left: 50%;
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-        }
-
-        nav a {
-            line-height: 50px;
-            height: 100%;
-            font-size: 15px;
-            display: inline-block;
-            position: relative;
-            z-index: 1;
-            text-decoration: none;
-            text-transform: uppercase;
-            text-align: center;
-            color: #fff;
-            cursor: pointer;            
-        }
-
-        nav .animation {
-            position: absolute;
-            height: 50px;                                   
-            bottom: 0;
-            z-index: 0;
-            transition: all .5s ease 0s;            
-        }
-        
-        a.home {
-            width: 175px;
-        }
-        a.about {
-            width: 175px;
-        }
-        a.contact {
-            width: 175px;
-        }
-        a.faq {
-            width: 175px;
-        }
-
-        nav .inicio-home, a.home:hover~.animation {
-            width: 175px;
-            left: 0;
-            border-bottom: 1px solid #ffc107;
-        }
-        nav .inicio-about, a.about:hover~.animation {
-            width: 175px;
-            left: 175px;
-            border-bottom: 1px solid#ffc107;
-        }
-        nav .inicio-contact, a.contact:hover~.animation {
-            width: 175px;
-            left: 350px;
-            border-bottom: 1px solid #ffc107;
-        }
-        nav .inicio-faq, a.faq:hover~.animation {
-            width: 175px;
-            left: 525px;
-            border-bottom: 1px solid #ffc107;
-        }
-
-        .active {
-            color:#ffc107;
-        }
-    </style>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <nav>        
@@ -100,12 +18,7 @@
     </nav>
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        $(function(){
-            $('nav a').click(function() {
-                $(this).addClass('active').siblings().removeClass('active');
-            });
-        })
-    </script>
+    <!-- Scripts -->
+    <script src="./js/script.js"></script>
 </body>
 </html>
